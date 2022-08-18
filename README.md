@@ -10,7 +10,7 @@ A new Flutter project.
 
 
 - Gambar 2
-- 
+
 ![Img 1](screenshot/2.png)
 
 
