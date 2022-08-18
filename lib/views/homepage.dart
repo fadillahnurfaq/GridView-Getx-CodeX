@@ -5,10 +5,15 @@ import 'package:getx_gridviewcodex/controllers/product_controller.dart';
 import 'package:getx_gridviewcodex/views/product_loading.dart';
 import 'package:getx_gridviewcodex/views/product_tile.dart';
 
-class HomePage extends StatelessWidget {
-  ProductController productController = Get.put(ProductController());
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
-  HomePage({Key? key}) : super(key: key);
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  ProductController productController = Get.put(ProductController());
 
   @override
   Widget build(BuildContext context) {
